@@ -1,0 +1,54 @@
+	section	.text,"ax",@progbits
+	assume	adl = 1
+	section	.text,"ax",@progbits
+	public	_main
+_main:
+	call	_gfx_Begin
+	ld	hl, 1
+	push	hl
+	call	_gfx_SetDraw
+	pop	hl
+	ld	hl, (-851900)
+	ld	a, (-851897)
+	push	hl
+	call	_srand
+BB0_1:
+	pop	hl
+	call	_kb_Scan
+	ld	hl, -720880
+	push	de
+	ld	e, (hl)
+	inc	hl
+	ld	d, (hl)
+	ld	l, e
+	ld	h, d
+	pop	de
+	ld	a, l
+	bit	6, a
+	jr	nz, BB0_3
+	scf
+	sbc	hl, hl
+	push	hl
+	call	_gfx_FillScreen
+	pop	hl
+	call	_gfx_SwapDraw
+	ld	hl, 50
+	push	hl
+	call	_delay
+	jr	BB0_1
+BB0_3:
+	or	a, a
+	sbc	hl, hl
+	ret
+	section	.text,"ax",@progbits
+
+	ident	"clang version 15.0.0 (https://github.com/jacobly0/llvm-project 5f8512f22751066573aa48ac848a6d2195838ac3)"
+	extern	_gfx_FillScreen
+	extern	__Unwind_SjLj_Register
+	extern	_srand
+	extern	__Unwind_SjLj_Unregister
+	extern	_gfx_Begin
+	extern	_kb_Scan
+	extern	_delay
+	extern	_gfx_SwapDraw
+	extern	_gfx_SetDraw

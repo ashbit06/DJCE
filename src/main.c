@@ -9,10 +9,23 @@
 #include <stdbool.h>
 #include <math.h>
 
+struct Player {
+    float x;
+    float y;
+    bool canMove;
+};
+
 int main() {
     gfx_Begin();
     gfx_SetDrawBuffer();
     srand(rtc_Time());
+
+    int scrollY = 0;
+
+    struct Player player;
+    player.x = 0;
+    player.y = 0;
+    player.canMove = true;
 
     // main game loop
     while (1) {
