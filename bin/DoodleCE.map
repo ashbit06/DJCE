@@ -1,15 +1,15 @@
 Section          Base   Top    High   Length
 ---------------- ------ ------ ------ -------
-.icon            D1A882 D1A8A4            22h
-.init.libs       D1A8A4 D1A8FC            58h
-.libs            D1A8FC D1A92D            31h
-.init.clock      D1A92D D1A948            1Bh
-.init.reruncheck D1A948 D1A948             0h
-.init            D1A948 D1A968            20h
-.fini            D1A968 D1A99C            34h
-.text            D1A99C D1AAFC           160h
-.data            D1AAFC D1AB0C            10h
-.rodata          D1AB0C D1AB2E            22h
+.icon            D1A882 D1A9A6           124h
+.init.libs       D1A9A6 D1A9FE            58h
+.libs            D1A9FE D1AA2F            31h
+.init.clock      D1AA2F D1AA4A            1Bh
+.init.reruncheck D1AA4A D1AA4A             0h
+.init            D1AA4A D1AA6A            20h
+.fini            D1AA6A D1AA9E            34h
+.text            D1AA9E D1ABFE           160h
+.data            D1ABFE D1AC0E            10h
+.rodata          D1AC0E D1AC30            22h
 .init_array      000000 000000             0h
 .ctors           000000 000000             0h
 .dtors           000000 000000             0h
@@ -23,38 +23,38 @@ ___low_bss                 = D052C6
 ___len_bss                 = 000000
 ___heaptop                 = D13FD8
 ___heapbot                 = D052C6
-___libs                    = D1A8FC
+___libs                    = D1A9FE
 ___init_array_count        = 000000
 ___ctors_count             = 000000
 ___dtors_count             = 000000
 ___fini_array_count        = 000000
 __stack                    = D1A87E
-__lmulu                    = D1A99C
-_atomic_load_increasing_32 = D1A9F8
-_delay                     = D1AA1D
-_os_DisableHomeTextBuffer  = D1AA47
-_os_EnableHomeTextBuffer   = D1AA59
-__setstate                 = D1AA72
-__state                    = D1AAFC
-___sleep_common.3          = D1AA84
-_clock                     = D1AA9D
-_srand                     = D1AAA8
-.missingappvar             = D1AB0C
-.libloadname               = D1AB11
+__lmulu                    = D1AA9E
+_atomic_load_increasing_32 = D1AAFA
+_delay                     = D1AB1F
+_os_DisableHomeTextBuffer  = D1AB49
+_os_EnableHomeTextBuffer   = D1AB5B
+__setstate                 = D1AB74
+__state                    = D1ABFE
+___sleep_common.3          = D1AB86
+_clock                     = D1AB9F
+_srand                     = D1ABAA
+.missingappvar             = D1AC0E
+.libloadname               = D1AC13
 .libloadnamelen            = 000007
-.webaddress                = D1AB19
-___init_clock              = D1A92D
-__start                    = D1A948
-___exithl                  = D1A968
-skip._exit                 = D1A968
-skip.__Exit                = D1A968
-skip._abort                = D1A968
-_exit.sp                   = D1A969
-_exit.flash_wait_states    = D1A973
-_main                      = D1AAB0
-lib.LibLoad                = D1A8FC
-_#gfx_Begin                = D1A90F
-_#gfx_FillScreen           = D1A913
-_#gfx_SetDraw              = D1A917
-_#gfx_SwapDraw             = D1A91B
-_#kb_Scan                  = D1A929
+.webaddress                = D1AC1B
+___init_clock              = D1AA2F
+__start                    = D1AA4A
+___exithl                  = D1AA6A
+skip._exit                 = D1AA6A
+skip.__Exit                = D1AA6A
+skip._abort                = D1AA6A
+_exit.sp                   = D1AA6B
+_exit.flash_wait_states    = D1AA75
+_main                      = D1ABB2
+lib.LibLoad                = D1A9FE
+_#gfx_Begin                = D1AA11
+_#gfx_FillScreen           = D1AA15
+_#gfx_SetDraw              = D1AA19
+_#gfx_SwapDraw             = D1AA1D
+_#kb_Scan                  = D1AA2B

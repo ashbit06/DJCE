@@ -1,5 +1,5 @@
 NAME = DoodleCE
-# ICON = icon.png
+ICON = icon.png
 DESCRIPTION = "A vertical platformer remake"
 
 COMPRESSED = NO
