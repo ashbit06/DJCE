@@ -2,7 +2,8 @@ obj/src/main.c.bc: src/main.c /Users/ashton/CEdev/include/graphx.h \
   /Users/ashton/CEdev/include/stdint.h \
   /Users/ashton/CEdev/include/cdefs.h \
   /Users/ashton/CEdev/include/stdlib.h \
-  /Users/ashton/CEdev/include/stdbool.h \
+  /Users/ashton/CEdev/include/stdbool.h src/gfx/gfx.h \
+  src/gfx/global_palette.h src/gfx/doodle0.h \
   /Users/ashton/CEdev/include/keypadc.h \
   /Users/ashton/CEdev/include/fileioc.h \
   /Users/ashton/CEdev/include/stddef.h \
